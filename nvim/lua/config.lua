@@ -1,10 +1,9 @@
 vim.g.mapleader = " "
 
-vim.opt.tabstop = 8
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
 vim.cmd(':set noexpandtab')
-
+vim.cmd(':set listchars=space:.,tab:-->')
+vim.cmd(':set list')
 vim.cmd(":set number relativenumber")
 
 vim.api.nvim_create_autocmd("VimEnter", {
